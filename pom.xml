@@ -5,6 +5,9 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Allgemeines Parent-Verzeichnis</name>
+  <scm>
+  	<connection>scm:git:file:///home/akoenig/workspace1/parent</connection>
+  </scm>
   <build>
   	<plugins>
   		<plugin>
