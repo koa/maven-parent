@@ -48,13 +48,15 @@
 
 	<distributionManagement>
 		<snapshotRepository>
-			<id>snapshots</id>
-			<url>dav:http://neptun.berg.local/artifactory/libs-snapshots</url>
-			<uniqueVersion>false</uniqueVersion>
+			<id>Neptun</id>
+			<name>Neptun-snapshots</name>
+			<url>http://neptun.berg.local/artifactory/libs-snapshots-local</url>
 		</snapshotRepository>
 		<repository>
-			<id>releases</id>
-			<url>dav:http://neptun.berg.local/artifactory/libs-releases</url>
+			<id>Neptun</id>
+			<name>Neptun-releases</name>
+			<url>http://neptun.berg.local/artifactory/libs-releases-local</url>
 		</repository>
+
 	</distributionManagement>
 </project>
