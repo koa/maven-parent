@@ -6,7 +6,7 @@
   <packaging>pom</packaging>
   <name>Allgemeines Parent-Verzeichnis</name>
   <scm>
-  	<connection>scm:git:file:///home/akoenig/workspace1/parent</connection>
+  	<connection>scm:git:file:///home/akoenig/git/parent.git</connection>
   </scm>
   <build>
   	<plugins>
