@@ -50,12 +50,12 @@
 		<snapshotRepository>
 			<id>Neptun</id>
 			<name>Neptun-snapshots</name>
-			<url>http://neptun.berg.local/artifactory/libs-snapshots-local</url>
+			<url>http://neptun.berg/artifactory/libs-snapshots-local</url>
 		</snapshotRepository>
 		<repository>
 			<id>Neptun</id>
 			<name>Neptun-releases</name>
-			<url>http://neptun.berg.local/artifactory/libs-releases-local</url>
+			<url>http://neptun.berg/artifactory/libs-releases-local</url>
 		</repository>
 	</distributionManagement>
 	
