@@ -42,6 +42,7 @@
 			<id>berg-turbenthal-snapshots</id>
 			<name>Neptun-snapshots</name>
 			<url>http://www.berg-turbenthal.ch/maven/snapshots/</url>
+			<uniqueVersion>true</uniqueVersion>
 		</snapshotRepository>
 		<repository>
 			<id>berg-turbenthal-releases</id>
