@@ -41,13 +41,13 @@
 		<snapshotRepository>
 			<id>berg-turbenthal-snapshots</id>
 			<name>Neptun-snapshots</name>
-			<url>http://neptun.berg-turbenthal.ch/nexus/content/repositories/snapshots/</url>
+			<url>http://nexus.berg-turbenthal.ch/content/repositories/snapshots/</url>
 			<uniqueVersion>true</uniqueVersion>
 		</snapshotRepository>
 		<repository>
 			<id>berg-turbenthal-releases</id>
 			<name>Neptun-releases</name>
-			<url>http://neptun.berg-turbenthal.ch/nexus/content/repositories/releases/</url>
+			<url>http://nexus.berg-turbenthal.ch/content/repositories/releases/</url>
 		</repository>
 	</distributionManagement>
 
