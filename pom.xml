@@ -1,114 +1,114 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>ch.berg-turbenthal.parent</groupId>
-	<artifactId>parent</artifactId>
-	<version>0.0.10-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<name>Allgemeines Parent-Verzeichnis</name>
-	<url>https://github.com/koa/maven-parent</url>
-	<issueManagement>
-		<system>Github</system>
-		<url>https://github.com/koa/maven-parent/issues</url>
-	</issueManagement>
-	<scm>
-		<connection>scm:git:git://github.com/koa/maven-parent.git</connection>
-		<developerConnection>scm:git:git@github.com:koa/maven-parent.git</developerConnection>
-	</scm>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-					<compilerArguments>
-						<encoding>UTF-8</encoding>
-					</compilerArguments>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>findbugs-maven-plugin</artifactId>
-				<version>2.4.0</version>
-			</plugin>
-		</plugins>		
-	</build>
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ch.berg-turbenthal.parent</groupId>
+  <artifactId>parent</artifactId>
+  <version>0.0.10-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Allgemeines Parent-Verzeichnis</name>
+  <url>https://github.com/koa/maven-parent</url>
+  <issueManagement>
+    <system>Github</system>
+    <url>https://github.com/koa/maven-parent/issues</url>
+  </issueManagement>
+  <scm>
+    <connection>scm:git:git://github.com/koa/maven-parent.git</connection>
+    <developerConnection>scm:git:git@github.com:koa/maven-parent.git</developerConnection>
+  </scm>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+          <compilerArguments>
+            <encoding>UTF-8</encoding>
+          </compilerArguments>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>2.4.0</version>
+      </plugin>
+    </plugins>
+  </build>
 
-	<distributionManagement>
-		<snapshotRepository>
-			<id>berg-turbenthal-snapshots</id>
-			<name>Neptun-snapshots</name>
-			<url>http://nexus.berg-turbenthal.ch/content/repositories/snapshots/</url>
-			<uniqueVersion>true</uniqueVersion>
-		</snapshotRepository>
-		<repository>
-			<id>berg-turbenthal-releases</id>
-			<name>Neptun-releases</name>
-			<url>http://nexus.berg-turbenthal.ch/content/repositories/releases/</url>
-		</repository>
-	</distributionManagement>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>berg-turbenthal-snapshots</id>
+      <name>Neptun-snapshots</name>
+      <url>http://nexus.berg-turbenthal.ch/content/repositories/snapshots/</url>
+      <uniqueVersion>true</uniqueVersion>
+    </snapshotRepository>
+    <repository>
+      <id>berg-turbenthal-releases</id>
+      <name>Neptun-releases</name>
+      <url>http://nexus.berg-turbenthal.ch/content/repositories/releases/</url>
+    </repository>
+  </distributionManagement>
 
-	<properties>
-		<!-- Global encoding to use. -->
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <properties>
+    <!-- Global encoding to use. -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<!-- Common Build Plugins -->
-		<maven-clean-plugin.version>2.4.1</maven-clean-plugin.version>
-		<maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
-		<maven-deploy-plugin.version>2.7</maven-deploy-plugin.version>
-		<maven-failsafe-plugin.version>2.12</maven-failsafe-plugin.version>
-		<maven-install-plugin.version>2.3.1</maven-install-plugin.version>
-		<maven-resources-plugin.version>2.5</maven-resources-plugin.version>
-		<maven-site-plugin.version>3.0</maven-site-plugin.version>
-		<maven-surefire-plugin.version>2.12</maven-surefire-plugin.version>
-		<maven-verifier-plugin.version>1.0</maven-verifier-plugin.version>
+    <!-- Common Build Plugins -->
+    <maven-clean-plugin.version>2.4.1</maven-clean-plugin.version>
+    <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
+    <maven-deploy-plugin.version>2.7</maven-deploy-plugin.version>
+    <maven-failsafe-plugin.version>2.12</maven-failsafe-plugin.version>
+    <maven-install-plugin.version>2.3.1</maven-install-plugin.version>
+    <maven-resources-plugin.version>2.5</maven-resources-plugin.version>
+    <maven-site-plugin.version>3.0</maven-site-plugin.version>
+    <maven-surefire-plugin.version>2.12</maven-surefire-plugin.version>
+    <maven-verifier-plugin.version>1.0</maven-verifier-plugin.version>
 
-		<!-- Packaging Plugins -->
+    <!-- Packaging Plugins -->
 
-		<maven-ear-plugin.version>2.7</maven-ear-plugin.version>
-		<maven-ejb-plugin.version>2.3</maven-ejb-plugin.version>
-		<maven-jar-plugin.version>2.4</maven-jar-plugin.version>
-		<maven-rar-plugin.version>2.2</maven-rar-plugin.version>
-		<maven-war-plugin.version>2.2</maven-war-plugin.version>
-		<maven-shade-plugin.version>1.5</maven-shade-plugin.version>
+    <maven-ear-plugin.version>2.7</maven-ear-plugin.version>
+    <maven-ejb-plugin.version>2.3</maven-ejb-plugin.version>
+    <maven-jar-plugin.version>2.4</maven-jar-plugin.version>
+    <maven-rar-plugin.version>2.2</maven-rar-plugin.version>
+    <maven-war-plugin.version>2.2</maven-war-plugin.version>
+    <maven-shade-plugin.version>1.5</maven-shade-plugin.version>
 
-		<!-- Reporting Plugins -->
+    <!-- Reporting Plugins -->
 
-		<maven-changelog-plugin.version>2.2</maven-changelog-plugin.version>
-		<maven-changes-plugin.version>2.6</maven-changes-plugin.version>
-		<maven-checkstyle-plugin.version>2.9.1</maven-checkstyle-plugin.version>
-		<maven-javadoc-plugin.version>2.8.1</maven-javadoc-plugin.version>
-		<maven-jxr-plugin.version>2.3</maven-jxr-plugin.version>
-		<maven-pmd-plugin.version>2.7.1</maven-pmd-plugin.version>
-		<maven-project-info-reports-plugin.version>2.4</maven-project-info-reports-plugin.version>
-		<maven-surefire-report-plugin.version>2.12</maven-surefire-report-plugin.version>
+    <maven-changelog-plugin.version>2.2</maven-changelog-plugin.version>
+    <maven-changes-plugin.version>2.6</maven-changes-plugin.version>
+    <maven-checkstyle-plugin.version>2.9.1</maven-checkstyle-plugin.version>
+    <maven-javadoc-plugin.version>2.8.1</maven-javadoc-plugin.version>
+    <maven-jxr-plugin.version>2.3</maven-jxr-plugin.version>
+    <maven-pmd-plugin.version>2.7.1</maven-pmd-plugin.version>
+    <maven-project-info-reports-plugin.version>2.4</maven-project-info-reports-plugin.version>
+    <maven-surefire-report-plugin.version>2.12</maven-surefire-report-plugin.version>
 
-		<!-- General Tool Plugins -->
+    <!-- General Tool Plugins -->
 
-		<maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
-		<maven-archetype-plugin.version>2.2</maven-archetype-plugin.version>
-		<maven-assembly-plugin.version>2.3</maven-assembly-plugin.version>
-		<maven-dependency-plugin.version>2.4</maven-dependency-plugin.version>
-		<maven-enforcer-plugin.version>1.0.1</maven-enforcer-plugin.version>
-		<maven-gpg-plugin.version>1.4</maven-gpg-plugin.version>
-		<maven-help-plugin.version>2.1.1</maven-help-plugin.version>
-		<maven-invoker-plugin.version>1.5</maven-invoker-plugin.version>
-		<maven-jarsigner-plugin.version>1.2</maven-jarsigner-plugin.version>
-		<maven-plugin-plugin.version>2.9</maven-plugin-plugin.version>
-		<maven-release-plugin.version>2.2.2</maven-release-plugin.version>
-		<maven-reactor-plugin.version>1.0</maven-reactor-plugin.version>
-		<maven-remote-resources-plugin.version>1.2.1</maven-remote-resources-plugin.version>
-		<maven-repository-plugin.version>2.3.1</maven-repository-plugin.version>
-		<maven-scm-plugin.version>1.5</maven-scm-plugin.version>
-		<maven-source-plugin.version>2.1.2</maven-source-plugin.version>
+    <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
+    <maven-archetype-plugin.version>2.2</maven-archetype-plugin.version>
+    <maven-assembly-plugin.version>2.3</maven-assembly-plugin.version>
+    <maven-dependency-plugin.version>2.4</maven-dependency-plugin.version>
+    <maven-enforcer-plugin.version>1.0.1</maven-enforcer-plugin.version>
+    <maven-gpg-plugin.version>1.4</maven-gpg-plugin.version>
+    <maven-help-plugin.version>2.1.1</maven-help-plugin.version>
+    <maven-invoker-plugin.version>1.5</maven-invoker-plugin.version>
+    <maven-jarsigner-plugin.version>1.2</maven-jarsigner-plugin.version>
+    <maven-plugin-plugin.version>2.9</maven-plugin-plugin.version>
+    <maven-release-plugin.version>2.2.2</maven-release-plugin.version>
+    <maven-reactor-plugin.version>1.0</maven-reactor-plugin.version>
+    <maven-remote-resources-plugin.version>1.2.1</maven-remote-resources-plugin.version>
+    <maven-repository-plugin.version>2.3.1</maven-repository-plugin.version>
+    <maven-scm-plugin.version>1.5</maven-scm-plugin.version>
+    <maven-source-plugin.version>2.1.2</maven-source-plugin.version>
 
-		<!-- IDE Integration Plugins -->
+    <!-- IDE Integration Plugins -->
 
-		<maven-eclipse-plugin.version>2.9</maven-eclipse-plugin.version>
-		<maven-idea-plugin.version>2.2</maven-idea-plugin.version>
-	</properties>
+    <maven-eclipse-plugin.version>2.9</maven-eclipse-plugin.version>
+    <maven-idea-plugin.version>2.2</maven-idea-plugin.version>
+  </properties>
 
 </project>
