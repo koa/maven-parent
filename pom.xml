@@ -1,62 +1,48 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>ch.berg-turbenthal.parent</groupId>
-  <artifactId>parent</artifactId>
-  <version>0.0.10-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <name>Allgemeines Parent-Verzeichnis</name>
-  <url>https://github.com/koa/maven-parent</url>
-  <issueManagement>
-    <system>Github</system>
-    <url>https://github.com/koa/maven-parent/issues</url>
-  </issueManagement>
-  <scm>
-    <connection>scm:git:git://github.com/koa/maven-parent.git</connection>
-    <developerConnection>scm:git:git@github.com:koa/maven-parent.git</developerConnection>
-  </scm>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>${java.version}</source>
-          <target>${java.version}</target>
-          <compilerArguments>
-            <encoding>UTF-8</encoding>
-          </compilerArguments>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>findbugs-maven-plugin</artifactId>
-        <version>3.0.2</version>
-      </plugin>
-    </plugins>
-  </build>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ch.berg-turbenthal.parent</groupId>
+	<artifactId>parent</artifactId>
+	<version>0.0.10-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Allgemeines Parent-Verzeichnis</name>
+	<url>https://github.com/koa/maven-parent</url>
+	<issueManagement>
+		<system>Github</system>
+		<url>https://github.com/koa/maven-parent/issues</url>
+	</issueManagement>
+	<scm>
+		<connection>scm:git:git://github.com/koa/maven-parent.git</connection>
+		<developerConnection>scm:git:git@github.com:koa/maven-parent.git</developerConnection>
+	</scm>
+	<build>
+		<!-- <plugins> <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-compiler-plugin</artifactId> 
+			<configuration> <source>${java.version}</source> <target>${java.version}</target> 
+			<compilerArguments> <encoding>UTF-8</encoding> </compilerArguments> </configuration> 
+			</plugin> <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>findbugs-maven-plugin</artifactId> 
+			<version>3.0.2</version> </plugin> </plugins> -->
+	</build>
 
-  <distributionManagement>
-    <snapshotRepository>
-      <id>berg-turbenthal-snapshots</id>
-      <name>Neptun-snapshots</name>
-      <url>http://nexus.berg-turbenthal.ch/content/repositories/snapshots/</url>
-      <uniqueVersion>true</uniqueVersion>
-    </snapshotRepository>
-    <repository>
-      <id>berg-turbenthal-releases</id>
-      <name>Neptun-releases</name>
-      <url>http://nexus.berg-turbenthal.ch/content/repositories/releases/</url>
-    </repository>
-  </distributionManagement>
-  <prerequisites>
-    <maven>3.1.1</maven>
-  </prerequisites>
+	<distributionManagement>
+		<repository>
+			<id>berg-releases</id>
+			<name>Releases Repository</name>
+			<url>http://nexus.berg-turbenthal.ch/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>berg-snapshots</id>
+			<name>Snapshots Repository</name>
+			<url>http://nexus.berg-turbenthal.ch/repository/maven-snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<prerequisites>
+		<maven>3.3.0</maven>
+	</prerequisites>
 
-  <properties>
-    <!-- Global encoding to use. -->
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<properties>
+		<!-- Global encoding to use. -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-  </properties>
+	</properties>
 
 </project>
