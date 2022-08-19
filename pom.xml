@@ -25,14 +25,14 @@
 
 	<distributionManagement>
 		<repository>
-			<id>berg-releases</id>
+			<id>koa-releases</id>
 			<name>Releases Repository</name>
-			<url>http://nexus.berg-turbenthal.ch/repository/maven-releases/</url>
+			<url>https://nexus.berg-turbenthal.ch/repository/maven-releases/</url>
 		</repository>
 		<snapshotRepository>
-			<id>berg-snapshots</id>
+			<id>koa-snapshots</id>
 			<name>Snapshots Repository</name>
-			<url>http://nexus.berg-turbenthal.ch/repository/maven-snapshots</url>
+			<url>https://nexus.berg-turbenthal.ch/repository/maven-snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<prerequisites>
